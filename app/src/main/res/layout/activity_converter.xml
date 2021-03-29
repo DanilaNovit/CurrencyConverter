@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/initial_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/initial_flag"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/initial_flag" />
+
+            <TextView
+                android:id="@+id/initial_charcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="RUS" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/baseline_keyboard_arrow_down_black_48"
+                android:contentDescription="@string/decorative_arrow" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/swap"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_sync_alt_black_48"
+            android:contentDescription="@string/swap" />
+
+        <LinearLayout
+            android:id="@+id/final_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/final_flag"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/final_flag" />
+
+            <TextView
+                android:id="@+id/final_charcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="USD"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/baseline_keyboard_arrow_down_black_48"
+                android:contentDescription="@string/decorative_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/initial_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:maxLength="16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:hint="@string/default_data"
+        android:autofillHints="@string/initial_value" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/default_data"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ImageView
+            android:id="@+id/update"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_cached_black_48"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@string/update_button" />
+
+    </FrameLayout>
+
+</LinearLayout>

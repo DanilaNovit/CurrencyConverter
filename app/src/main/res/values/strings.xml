@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="currency_list">List Of Currency</string>
+
+    <string name="default_data">0</string>
+    <string name="flag">Flag</string>
+    <string name="initial_flag">Initial Flag</string>
+    <string name="final_flag">Final Flag</string>
+    <string name="swap">Swap</string>
+    <string name="decorative_arrow">Decorative arrow</string>
+    <string name="initial_value">Initial Value</string>
+    <string name="update_button">Update Button</string>
+</resources>
