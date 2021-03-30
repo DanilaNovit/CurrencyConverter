@@ -118,7 +118,6 @@ public class CurrencyListAdapter extends RecyclerView.Adapter<CurrencyListAdapte
         private final ImageView flag;
         private final TextView name;
         private final TextView charCode;
-        private final TextView value;
 
         public CurrencyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -126,7 +125,6 @@ public class CurrencyListAdapter extends RecyclerView.Adapter<CurrencyListAdapte
             flag = itemView.findViewById(R.id.flag);
             name = itemView.findViewById(R.id.name);
             charCode = itemView.findViewById(R.id.charcode);
-            value = itemView.findViewById(R.id.value);
 
             itemView.setOnClickListener(this);
         }
@@ -140,7 +138,6 @@ public class CurrencyListAdapter extends RecyclerView.Adapter<CurrencyListAdapte
                     context.getPackageName())));
             name.setText(currency.getName());
             charCode.setText(currency.getCharCode());
-            value.setText(Double.toString(currency.getValue()));
         }
 
         @Override
